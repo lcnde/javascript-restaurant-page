@@ -72,11 +72,14 @@ header {
   background-color: rgba(0, 0, 0, 0.616);
 }
 
-header div {
+header button {
+  color: white;
   padding: 20px 40px;
   font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
-header div:hover {
+header button:hover {
   background-color: black;
   border-radius: 100px;
 }
@@ -113,4 +116,17 @@ header .whey img{
   padding: 20px;
   border: 5px solid white;
   border-radius: 10px;
+}
+
+.card p {
+  font-size: 20px; 
+}
+
+.card h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.card >div>div {
+  margin: 5px 0;
 }
