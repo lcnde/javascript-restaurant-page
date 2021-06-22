@@ -34,31 +34,31 @@ export function pageOneLoad() {
   h2.innerHTML = "Hours";
   div.appendChild(h2);
 
-  var childDiv = document.createElement("div");
+  var childDiv = document.createElement("p");
   childDiv.innerHTML = "Sunday: 8am - 8pm";
   div.appendChild(childDiv);
 
-  var childDiv = document.createElement("div");
+  var childDiv = document.createElement("p");
   childDiv.innerHTML = "Monday: 6am - 6pm";
   div.appendChild(childDiv);
   
-  var childDiv = document.createElement("div");
+  var childDiv = document.createElement("p");
   childDiv.innerHTML = "Tuesday: 6am - 6pm";
   div.appendChild(childDiv);
 
-  var childDiv = document.createElement("div");
+  var childDiv = document.createElement("p");
   childDiv.innerHTML = "Wednesday: 6am - 6pm";
   div.appendChild(childDiv);
 
-  var childDiv = document.createElement("div");
+  var childDiv = document.createElement("p");
   childDiv.innerHTML = "Thursday: 6am - 10pm";
   div.appendChild(childDiv);
 
-  var childDiv = document.createElement("div");
+  var childDiv = document.createElement("p");
   childDiv.innerHTML = "Friday: 6am - 10pm";
   div.appendChild(childDiv);
 
-  var childDiv = document.createElement("div");
+  var childDiv = document.createElement("p");
   childDiv.innerHTML = "Saturday: 8am - 10pm";
   div.appendChild(childDiv);
 

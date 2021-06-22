@@ -1,5 +1,8 @@
 import Whey from './whey.png';
-
+import {pageOneLoad} from './page-1-load.js';
+import {pageTwoLoad} from './page-2-load.js';
+import {pageThreeLoad} from './page-3-load.js';
+ 
 export function header() {
   var content = document.getElementById("content");
 
@@ -12,6 +15,7 @@ export function header() {
 
   var button = document.createElement("button");
   button.innerHTML = "Home";
+  button.setAttribute("id", "home");
   whey.appendChild(button);
 
   var image = document.createElement("img");
@@ -19,10 +23,31 @@ export function header() {
   whey.appendChild(image);
 
   var button = document.createElement("button");
+  button.setAttribute("id", "menu");
   button.innerHTML = "Menu";
   header.appendChild(button);
 
   var button = document.createElement("button");
+  button.setAttribute("id", "contact");
   button.innerHTML = "Contact";
   header.appendChild(button);
+
+  //controls buttons behavior
+  var home = document.getElementById('home');
+  home.addEventListener('click', () => {
+    content.innerHTML = "";
+    pageOneLoad();
+  });
+
+  var menu = document.getElementById('menu');
+  menu.addEventListener('click', () => {
+    content.innerHTML = "";
+    pageTwoLoad();
+  });
+
+  var contact = document.getElementById('contact');
+  contact.addEventListener('click', () => {
+    content.innerHTML = "";
+    pageThreeLoad();
+  });
 }

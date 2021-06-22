@@ -118,8 +118,9 @@ header .whey img{
   border-radius: 10px;
 }
 
-.card p {
+.card * p {
   font-size: 20px; 
+  margin: 5px 0;
 }
 
 .card h2 {
